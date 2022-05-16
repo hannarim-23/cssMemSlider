@@ -93,7 +93,6 @@ width: 75%;
 .text{
     width: 20%;
     transition: all .60s easy;
-   /* opacity: 0;*/
 }
 /*
 .bar input[type="radio"]:checked { background-color:red; }
