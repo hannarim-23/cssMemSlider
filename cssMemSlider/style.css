@@ -100,7 +100,6 @@ width: 75%;
 
 
 #slid_12:checked ~ .s1 {
-    /*margin-left: 0;*/
     opacity: 1;
     animation-name: anime;
     animation-duration: 4s;
