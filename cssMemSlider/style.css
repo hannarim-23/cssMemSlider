@@ -98,7 +98,6 @@ width: 75%;
 .bar input[type="radio"]:checked { background-color:red; }
 */
 
-
 #slid_12:checked ~ .s1 {
     opacity: 1;
     animation-name: anime;
