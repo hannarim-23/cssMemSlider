@@ -1,0 +1,150 @@
+html{
+    background-color:grey;
+}
+.wrapper{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteiner{
+    padding-top: 5%;   
+    padding-left: 5%;
+    padding-right: 5%;
+   background-color:rgb(28, 10, 70); 
+   overflow: hidden;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 15px; 
+}
+
+.small_container{
+    min-height: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    /*overflow: hidden;*/
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    margin: 0;
+    font-family: Georgia, Verdana sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color:white;
+}
+
+.bar{
+    height: 8px;
+    width: 8px;
+    margin: 6px;
+    border-radius: 100%;
+    cursor: pointer;
+    
+    border: 2px solid white;
+    transition: all .4s easy;
+}
+.bar:hover{
+    background-color: rgb(236, 206, 34);
+    border: 2px solid rgb(236, 206, 34);
+    transform: scale(2);
+}
+.bar:active{
+    background-color:white;
+}
+
+input[name="slid"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.picture{
+    width: 528%;
+    height: 100%;
+    display: flex; 
+}
+.pic {
+    width: 19%;
+    transition: all .6s easy;
+    padding-right: 1%;
+
+    opacity: 0;
+    transition: 2s;
+}
+
+.txt{
+width: 75%;
+ 
+}
+.text-box{
+    width: 500%;
+    display: inline-block;
+    /*display: flex;*/
+}
+
+.text{
+    width: 20%;
+    transition: all .60s easy;
+}
+/*
+.bar input[type="radio"]:checked { background-color:red; }
+*/
+
+#slid_12:checked ~ .s1 {
+    opacity: 1;
+    animation-name: anime;
+    animation-duration: 4s;
+}
+#slid_9:checked ~ .s2{
+    margin-left: -20%; 
+    opacity: 1;
+}
+#slid_6:checked ~ .s3{
+    margin-left: -40%;
+    opacity: 1;
+}
+#slid_2:checked ~ .s4{
+    margin-left: -60%;
+    opacity: 1;
+}
+#slid_1:checked ~ .s5{
+    margin-left: -80%;
+    opacity: 1;
+}
+
+@keyframes anime{
+    0%{margin-left: 20%; opacity: 0.25;}
+    50%{margin-left: 0%; opacity: 0.75;}
+    100%{opacity: 1;}
+}
+
+/*----------------------------*/
+
+@media  (max-width:414px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .small_container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+.navigation{
+    width: 35%;
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+.txt{
+    width: 100%;
+}
+
+}
